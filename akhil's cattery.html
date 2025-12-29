@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhil's Cattery | Premium Cat Boarding & Kittens in Bengaluru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --navy: #1e293b; --sage: #4d7c0f; }
+        body { font-family: 'Open Sans', sans-serif; background-color: #f8fafc; color: #334155; }
+        h1, h2, h3, h4 { font-family: 'Merriweather', serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(30, 41, 59, 0.85), rgba(30, 41, 59, 0.75)),
+                        url('https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover; background-position: center; background-attachment: fixed;
+        }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-lg font-bold text-slate-800">AKHIL'S CATTERY</a>
+            <div class="hidden sm:flex space-x-6 text-sm font-semibold">
+                <a href="#services" class="hover:text-green-700">Services</a>
+                <a href="#about" class="hover:text-green-700">About</a>
+                <a href="#gallery" class="hover:text-green-700">Gallery</a>
+                <a href="#contact" class="bg-green-700 text-white px-4 py-2 rounded-md">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-16">
+        <div class="hero-bg text-white min-h-[450px] flex items-center">
+            <div class="max-w-4xl mx-auto px-6 py-12">
+                <h1 class="text-4xl sm:text-6xl font-black mb-4">Safe, Loving Cat Boarding in Bengaluru</h1>
+                <p class="text-xl mb-8 text-gray-200">Where your cat enjoys ample space and individual attention.</p>
+                <a href="#contact" class="inline-block bg-white text-black px-6 py-3 rounded-md font-bold">Book Your Cat's Stay</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="py-16 bg-gray-50 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-800 mb-4">Our Services</h2>
+                <p class="text-gray-600 font-semibold">Everything your cat needs for a comfortable stay.</p>
+            </div>
+
+            <div id="kitten-sales" class="fade-in mb-20">
+                <h3 class="text-2xl sm:text-3xl text-slate-800 mb-2 text-center font-bold">Kittens for Sale</h3>
+                <h4 class="text-xl text-green-700 mb-8 text-center font-bold">Kittens Available</h4>
+                
+                <p class="text-center max-w-2xl mx-auto mb-10 text-gray-600 font-medium">
+                    We occasionally have adorable kittens available. Raised with love and fully socialized.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="aspect-square bg-white border-2 border-dashed border-gray-300 rounded-xl flex flex-col items-center justify-center text-gray-400 shadow-sm">
+                        <i class="fas fa-camera text-3xl mb-2"></i>
+                        <span class="font-bold">Kitten Photo 1</span>
+                    </div>
+                    <div class="aspect-square bg-white border-2 border-dashed border-gray-300 rounded-xl flex flex-col items-center justify-center text-gray-400 shadow-sm">
+                        <i class="fas fa-camera text-3xl mb-2"></i>
+                        <span class="font-bold">Kitten Photo 2</span>
+                    </div>
+                    <div class="aspect-square bg-white border-2 border-dashed border-gray-300 rounded-xl flex flex-col items-center justify-center text-gray-400 shadow-sm">
+                        <i class="fas fa-camera text-3xl mb-2"></i>
+                        <span class="font-bold">Kitten Photo 3</span>
+                    </div>
+                </div>
+
+                <div class="text-center mt-10">
+                    <a href="tel:+919731419770" class="inline-flex items-center gap-2 bg-green-700 text-white px-8 py-3 rounded-md font-bold">
+                        <i class="fas fa-phone"></i> Call for Availability
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-slate-900 text-white px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-black mb-8">Book Your Cat's Stay</h2>
+            <div class="flex flex-col sm:flex-row justify-center gap-8">
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-phone text-green-500"></i>
+                    <span class="font-bold">+91 97314 19770</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fab fa-instagram text-green-500"></i>
+                    <span class="font-bold">@akhil_cattery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2024 Akhil's Cattery Bengaluru.</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
